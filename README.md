@@ -1,4 +1,4 @@
-# ceph
+# Ceph
 
 - Block Storage (RBD) - RADOS Block Device
 - File System (CephFS)
