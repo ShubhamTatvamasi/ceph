@@ -1,8 +1,8 @@
 # ceph
 
-- Block Storage (RBD)
+- Block Storage (RBD) - RADOS Block Device
 - File System (CephFS)
-- Object Storage (RGW)
+- Object Storage (RGW) - RADOS Gateway
 
 
 Check cluster status:
