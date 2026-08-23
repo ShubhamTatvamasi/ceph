@@ -37,13 +37,4 @@ flowchart TB
     RADOS --> OSD3
 ```
 
-Check cluster status:
-```bash
-ceph status
-```
-
-```bash
-ceph osd status
-```
-
 
