@@ -63,3 +63,29 @@ flowchart TB
     RADOS --> OSD2
     RADOS --> OSD3
 ```
+
+---
+
+librados = Library for RADOS
+```mermaid
+flowchart TB
+    APP[Application]
+
+    RBD[RBD<br/>Block Storage]
+    CEPHFS[CephFS<br/>File System]
+    RGW[RGW<br/>Object Storage / S3]
+
+    APP --> RBD
+    APP --> CEPHFS
+    APP --> RGW
+
+    RBD --> LIBRADOS[librados<br/>Native Ceph Client Library]
+    CEPHFS --> LIBRADOS
+    RGW --> LIBRADOS
+
+    LIBRADOS --> RADOS[RADOS<br/>Distributed Object Store]
+
+    RADOS --> OSD1[OSD 1]
+    RADOS --> OSD2[OSD 2]
+    RADOS --> OSD3[OSD 3]
+```
