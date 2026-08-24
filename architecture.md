@@ -1,6 +1,6 @@
 # Architecture
 
-
+Simple relationship
 ```mermaid
 flowchart TB
     CEPH[Ceph]
