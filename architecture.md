@@ -31,6 +31,8 @@ flowchart TB
     CEPHFS --> MDS[MDS<br/>Metadata Server]
 ```
 
+---
+
 ```mermaid
 flowchart TB
     subgraph Clients
