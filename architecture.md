@@ -89,3 +89,80 @@ flowchart TB
     RADOS --> OSD2[OSD 2]
     RADOS --> OSD3[OSD 3]
 ```
+
+---
+
+Ceph cluster distributed across multiple racks
+```mermaid
+flowchart TB
+    CLIENT[Ceph Clients / Applications]
+
+    subgraph CEPH["Ceph Cluster"]
+        direction TB
+
+        MON1[MON 1]
+        MON2[MON 2]
+        MON3[MON 3]
+
+        MGR1[MGR Active]
+        MGR2[MGR Standby]
+
+        subgraph RACK1["Rack 1"]
+            direction TB
+
+            subgraph NODE1["Ceph Node 1"]
+                OSD1[OSD 1]
+                OSD2[OSD 2]
+                OSD3[OSD 3]
+            end
+
+            subgraph NODE2["Ceph Node 2"]
+                OSD4[OSD 4]
+                OSD5[OSD 5]
+                OSD6[OSD 6]
+            end
+        end
+
+        subgraph RACK2["Rack 2"]
+            direction TB
+
+            subgraph NODE3["Ceph Node 3"]
+                OSD7[OSD 7]
+                OSD8[OSD 8]
+                OSD9[OSD 9]
+            end
+
+            subgraph NODE4["Ceph Node 4"]
+                OSD10[OSD 10]
+                OSD11[OSD 11]
+                OSD12[OSD 12]
+            end
+        end
+
+        subgraph RACK3["Rack 3"]
+            direction TB
+
+            subgraph NODE5["Ceph Node 5"]
+                OSD13[OSD 13]
+                OSD14[OSD 14]
+                OSD15[OSD 15]
+            end
+
+            subgraph NODE6["Ceph Node 6"]
+                OSD16[OSD 16]
+                OSD17[OSD 17]
+                OSD18[OSD 18]
+            end
+        end
+    end
+
+    CLIENT --> CEPH
+
+    MON1 --- MON2
+    MON2 --- MON3
+    MON1 --- MON3
+
+    MGR1 --- MGR2
+```
+
+
