@@ -165,4 +165,80 @@ flowchart TB
     MGR1 --- MGR2
 ```
 
+---
+
+Ceph Replication vs Erasure Coding
+```mermaid
+flowchart TB
+    Client["Client Application"]
+
+    Client --> RADOS["RADOS<br/>Object: object-123<br/>Size: 100 MB"]
+
+    RADOS --> CRUSH["CRUSH Algorithm<br/>Determines PG and OSD placement"]
+
+    %% Replication
+    CRUSH --> REP
+
+    subgraph REP["Replicated Pool — size=3, min_size=2"]
+        direction TB
+
+        RPrimary["Primary OSD<br/>OSD.0<br/><br/>Object: 100 MB<br/>Acts as primary"]
+
+        RReplica1["Replica OSD<br/>OSD.1<br/><br/>Full copy: 100 MB"]
+
+        RReplica2["Replica OSD<br/>OSD.2<br/><br/>Full copy: 100 MB"]
+
+        RPrimary -->|"Replicate full object"| RReplica1
+        RPrimary -->|"Replicate full object"| RReplica2
+
+        RPrimary --> RACK1
+        RReplica1 --> RACK2
+        RReplica2 --> RACK3
+
+        RACK1["Rack 1"]
+        RACK2["Rack 2"]
+        RACK3["Rack 3"]
+    end
+
+    %% Erasure Coding
+    CRUSH --> EC
+
+    subgraph EC["Erasure Coded Pool — k=2, m=1"]
+        direction TB
+
+        ECSplit["Object: 100 MB<br/>Split into data chunks"]
+
+        Data1["Data Chunk D1<br/>50 MB"]
+        Data2["Data Chunk D2<br/>50 MB"]
+
+        Parity["Coding / Parity Chunk P1<br/>50 MB"]
+
+        ECSplit --> Data1
+        ECSplit --> Data2
+
+        Data1 --> Encode["Erasure Coding Algorithm"]
+        Data2 --> Encode
+
+        Encode --> Parity
+
+        Data1 --> ECOSD1["OSD.0<br/>Rack 1"]
+        Data2 --> ECOSD2["OSD.1<br/>Rack 2"]
+        Parity --> ECOSD3["OSD.2<br/>Rack 3"]
+    end
+
+    %% Failure Recovery
+    subgraph FAILURE["Failure and Recovery"]
+        direction LR
+
+        Failed["OSD.1 Failed ❌"]
+
+        RepRecover["Replication<br/>Copy full object from<br/>another healthy replica"]
+
+        ECRecover["Erasure Coding<br/>Reconstruct missing chunk<br/>using remaining chunks"]
+
+        Failed --> RepRecover
+        Failed --> ECRecover
+    end
+```
+
 
