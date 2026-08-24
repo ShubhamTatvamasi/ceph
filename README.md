@@ -6,6 +6,7 @@ https://docs.ceph.com/en/latest/
 - File System (CephFS)
 - Object Storage (RGW) - RADOS Gateway
 
+RADOS - Reliable Autonomic Distributed Object Store
 
 ```mermaid
 flowchart TB
