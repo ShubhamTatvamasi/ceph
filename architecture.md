@@ -3,6 +3,36 @@
 
 ```mermaid
 flowchart TB
+    CEPH[Ceph]
+
+    CEPH --> RBD[RBD<br/>Block Storage]
+    CEPH --> CEPHFS[CephFS<br/>File System]
+    CEPH --> RGW[RGW<br/>Object Storage / S3]
+
+    RBD --> RADOS[RADOS<br/>Reliable Autonomic Distributed Object Store]
+    CEPHFS --> RADOS
+    RGW --> RADOS
+
+    MON[MON<br/>Cluster Maps & Quorum] --> RADOS
+    MGR[MGR<br/>Monitoring & Management] --> RADOS
+
+    RADOS --> CRUSH[CRUSH<br/>Data Placement]
+
+    CRUSH --> PG[Placement Groups / PGs]
+
+    PG --> OSD1[OSD 1]
+    PG --> OSD2[OSD 2]
+    PG --> OSD3[OSD 3]
+
+    OSD1 --> DISK1[(Disk)]
+    OSD2 --> DISK2[(Disk)]
+    OSD3 --> DISK3[(Disk)]
+
+    CEPHFS --> MDS[MDS<br/>Metadata Server]
+```
+
+```mermaid
+flowchart TB
     subgraph Clients
         A[Application]
     end
