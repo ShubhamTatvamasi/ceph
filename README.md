@@ -2,9 +2,9 @@
 
 https://docs.ceph.com/en/latest/
 
-- Block Storage (RBD) - RADOS Block Device
+- Block Storage (RBD)
 - File System (CephFS)
-- Object Storage (RGW) - RADOS Gateway
+- Object Storage (RGW)
 
 
 | Short Form    | Full Form                                         | Purpose                                                          |
