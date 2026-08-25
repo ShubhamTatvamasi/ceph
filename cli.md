@@ -5,6 +5,14 @@ Check cluster status:
 ceph status
 ```
 
+### OSD
+
+Check the status of disks:
 ```bash
 ceph osd status
+```
+
+Check the tree of disks:
+```
+ceph osd tree
 ```
