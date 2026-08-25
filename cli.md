@@ -26,3 +26,8 @@ Check if there is any data on the disk:
 ```bash
 ceph osd df tree
 ```
+
+Add the disk back again:
+```bash
+ceph osd in 3
+```
