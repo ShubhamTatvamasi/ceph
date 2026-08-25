@@ -22,6 +22,11 @@ Mark OSD which you want to take out:
 ceph osd out 3
 ```
 
+Delete OSD disk from ceph cluster:
+```bash
+ceph osd purge 3
+```
+
 Check if there is any data on the disk:
 ```bash
 ceph osd df tree
