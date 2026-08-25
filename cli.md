@@ -21,3 +21,8 @@ Mark OSD which you want to take out:
 ```bash
 ceph osd out 3
 ```
+
+Check if there is any data on the disk:
+```bash
+ceph osd df tree
+```
