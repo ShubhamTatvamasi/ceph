@@ -10,14 +10,14 @@ https://docs.ceph.com/en/latest/
 | Short Form    | Full Form                                         | Purpose                                                          |
 | ------------- | ------------------------------------------------- | ---------------------------------------------------------------- |
 | **Ceph**      | Named after the cephalopod                        | Distributed storage platform                                     |
+| **RBD**       | **RADOS Block Device**                            | Provides block storage                                           |
+| **MDS**       | **Metadata Server**                               | Manages filesystem metadata for CephFS                           |
+| **RGW**       | **RADOS Gateway**                                 | Provides S3 and Swift-compatible object storage                  |
 | **RADOS**     | **Reliable Autonomic Distributed Object Store**   | Core distributed object storage layer                            |
 | **OSD**       | **Object Storage Daemon**                         | Stores data, handles replication, recovery, and rebalancing      |
 | **MON**       | **Monitor**                                       | Maintains cluster maps, state, authentication, and quorum        |
 | **MGR**       | **Manager**                                       | Provides monitoring, metrics, dashboards, and management modules |
-| **RBD**       | **RADOS Block Device**                            | Provides block storage                                           |
 | **CephFS**    | **Ceph File System**                              | Provides distributed POSIX filesystem storage                    |
-| **RGW**       | **RADOS Gateway**                                 | Provides S3 and Swift-compatible object storage                  |
-| **MDS**       | **Metadata Server**                               | Manages filesystem metadata for CephFS                           |
 | **CRUSH**     | **Controlled Replication Under Scalable Hashing** | Determines where data should be placed across OSDs               |
 | **PG**        | **Placement Group**                               | Logical grouping used to distribute objects across OSDs          |
 | **CSI**       | **Container Storage Interface**                   | Lets Kubernetes provision and manage Ceph storage                |
