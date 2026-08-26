@@ -44,8 +44,8 @@ ceph orch apply osd --all-available-devices
 ---
 
 
-Format a disk:
+Format the disk if it's not available:
 ```bash
 ceph orch device zap ceph-node2 /dev/sdb --force
-``
+```
 
