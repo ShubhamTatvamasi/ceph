@@ -24,6 +24,10 @@ sudo usermod -aG docker $USER
 
 Add `tentacle` repo:
 ```bash
-cephadm add-repo --release tentacle
+sudo cephadm add-repo --release tentacle
 ```
 
+Install ceph
+```bash
+sudo cephadm install
+```
