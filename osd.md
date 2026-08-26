@@ -10,6 +10,8 @@ Check the tree of disks:
 ceph osd tree
 ```
 
+---
+
 Mark OSD which you want to take out:
 ```bash
 ceph osd out 3
