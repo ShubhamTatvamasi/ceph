@@ -28,4 +28,7 @@ ceph orch apply mon --placement="ceph-node1,ceph-node2,ceph-node3"
 ceph orch apply mgr --placement="ceph-node1,ceph-node2,ceph-node3"
 ```
 
-
+List all OSD drives:
+```bash
+ceph orch device ls
+```
