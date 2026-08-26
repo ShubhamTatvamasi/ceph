@@ -29,3 +29,9 @@ cephadm shell -- ceph cephadm get-pub-key > ceph.pub
 ```bash
 cat ceph.pub
 ```
+
+Update the public key from node1 to to node2 and node3:
+```bash
+vim /root/.ssh/authorized_keys
+```
+
