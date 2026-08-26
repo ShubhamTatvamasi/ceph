@@ -62,5 +62,10 @@ sudo cephadm bootstrap \
   --cluster-network 10.20.0.0/16
 ```
 
+Get public key from node1:
+```bash
+cephadm shell -- ceph cephadm get-pub-key > ceph.pub
+```
+
 
 
