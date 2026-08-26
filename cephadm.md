@@ -44,7 +44,12 @@ Access the ceph shell:
 sudo cephadm shell
 ```
 
-
+bootstrap cluster:
+```bash
+sudo cephadm bootstrap \
+  --mon-ip 10.10.153.255 \
+  --cluster-network 10.20.0.0/16
+```
 
 
 
