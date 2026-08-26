@@ -37,6 +37,8 @@ Add the disk back again:
 ceph osd in 3
 ```
 
+---
+
 Remove device class:
 ```
 ceph osd crush rm-device-class osd.0
