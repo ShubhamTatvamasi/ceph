@@ -18,6 +18,12 @@ Check the sources:
 chronyc sources
 ```
 
+Restart chrony if clock skew detected:
+```bash
+sudo systemctl restart chronyd
+```
+
+
 ---
 
 Confirm time of all nodes:
