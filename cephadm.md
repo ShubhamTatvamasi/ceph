@@ -19,3 +19,11 @@ Add user to the docker group
 ```bash
 sudo usermod -aG docker $USER
 ```
+
+---
+
+Add `tentacle` repo:
+```bash
+cephadm add-repo --release tentacle
+```
+
