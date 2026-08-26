@@ -13,6 +13,13 @@ sudo apt install chrony
 systemctl status chronyd
 ```
 
+Check the sources:
+```bash
+chronyc sources
+```
+
+---
+
 Confirm time of all nodes:
 ```bash
 timedatectl
