@@ -1,5 +1,11 @@
 # Ceph Cluster
 
+Set hostnames on all 3 nodes:
+```bash
+sudo hostnamectl set-hostname ceph-node1
+sudo hostnamectl set-hostname ceph-node2
+sudo hostnamectl set-hostname ceph-node3
+```
 
 Update hosts file:
 ```bash
