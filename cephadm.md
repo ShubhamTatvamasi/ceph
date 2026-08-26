@@ -5,7 +5,7 @@ https://download.ceph.com
 
 
 ```bash
-sudo apt install -y cephadm
+sudo apt install -y cephadm python3-ceph-common
 ```
 
 manual
