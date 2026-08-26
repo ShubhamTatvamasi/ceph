@@ -44,6 +44,17 @@ Access the ceph shell:
 sudo cephadm shell
 ```
 
+Create a cehp group: 
+```bash
+groupadd -g 167 ceph
+useradd -r \
+  -u 167 \
+  -g 167 \
+  -d /var/lib/ceph \
+  -s /usr/sbin/nologin \
+  ceph
+```
+
 bootstrap cluster:
 ```bash
 sudo cephadm bootstrap \
