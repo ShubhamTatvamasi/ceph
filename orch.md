@@ -15,3 +15,6 @@ cephadm shell -- ceph orch host add ceph-node3 --labels _admin
 cephadm shell -- ceph orch host ls
 ```
 
+```
+cephadm shell -- ceph orch ps
+```
