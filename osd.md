@@ -51,3 +51,17 @@ List all pools:
 ceph osd pool ls
 ```
 
+Create a new pool
+```bash
+ceph osd pool create repool1
+```
+
+delete the pool:
+```bash
+ceph osd pool rm repool1
+```
+
+
+
+
+
