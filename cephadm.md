@@ -31,3 +31,7 @@ Install ceph
 ```bash
 sudo cephadm install
 ```
+
+```
+dpkg-query -W cephadm
+```
