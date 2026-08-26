@@ -12,3 +12,8 @@ sudo apt install chrony
 ```bash
 systemctl status chronyd
 ```
+
+Confirm time of all nodes:
+```bash
+timedatectl
+```
