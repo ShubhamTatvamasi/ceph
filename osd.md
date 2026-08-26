@@ -43,3 +43,11 @@ Set device class:
 ```
 ceph osd crush set-device-class nvme osd.0
 ```
+
+---
+
+List all pools:
+```bash
+ceph osd pool ls
+```
+
