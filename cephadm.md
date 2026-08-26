@@ -39,7 +39,7 @@ dpkg-query -W cephadm
 
 ---
 
-Access the ceph chell:
+Access the ceph shell:
 ```bash
 sudo cephadm shell
 ```
