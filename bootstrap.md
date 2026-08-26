@@ -25,3 +25,7 @@ Get public key from node1:
 ```bash
 cephadm shell -- ceph cephadm get-pub-key > ceph.pub
 ```
+
+```bash
+cat ceph.pub
+```
