@@ -1,0 +1,16 @@
+# cephadm
+
+https://docs.ceph.com/en/latest/releases/#active-releases \
+https://download.ceph.com
+
+
+```bash
+sudo apt install -y cephadm
+```
+
+manual
+```
+CEPH_RELEASE=20.2.4
+curl --silent --remote-name --location \
+  https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
+```
