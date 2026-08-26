@@ -35,3 +35,16 @@ sudo cephadm install
 ```
 dpkg-query -W cephadm
 ```
+
+
+---
+
+Access the ceph chell:
+```bash
+sudo cephadm shell
+```
+
+
+
+
+
