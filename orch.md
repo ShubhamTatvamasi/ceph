@@ -40,3 +40,12 @@ Add all OSD to the cluster:
 ceph orch apply osd --all-available-devices
 ```
 
+
+---
+
+
+Format a disk:
+```bash
+ceph orch device zap ceph-node2 /dev/sdb --force
+``
+
