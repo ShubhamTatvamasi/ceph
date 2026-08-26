@@ -1,4 +1,4 @@
-# OSD
+# Ceph OSD
 
 Check the status of disks:
 ```bash
