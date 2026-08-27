@@ -39,6 +39,10 @@ All the files should be owned by root:
 sudo chown root:root /etc/ceph/*
 ```
 
+```bash
+sudo chmod 600 /etc/ceph/ceph.client.admin.keyring
+```
+
 Validate keyring file:
 ```bash
 sudo ceph-authtool /etc/ceph/ceph.client.admin.keyring --list
