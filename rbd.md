@@ -36,6 +36,11 @@ Verify:
 ls /dev/rbd0
 ```
 
+Create the filesystem:
+```
+mkfs.xfs /dev/rbd0
+```
+
 ---
 
 Remove extra map:
