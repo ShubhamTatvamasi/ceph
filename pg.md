@@ -19,3 +19,8 @@ List by pool:
 ```bash
 ceph pg ls-by-pool rbd_pool
 ```
+
+List by OSD:
+```bash
+ceph pg ls-by-osd 0
+```
