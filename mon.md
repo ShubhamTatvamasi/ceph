@@ -20,6 +20,11 @@ Verify keys:
 ceph mon dump | grep auth_.*cipher
 ```
 
+Change `auth_preferred_cipher` back to `aes256k` key once you have the new key:
+```bash
+ceph mon set auth_preferred_cipher aes256k
+```
+
 ---
 
 Rotate key with legacy `aes` algo:
