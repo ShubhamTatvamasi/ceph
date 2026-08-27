@@ -18,13 +18,19 @@ Copy `ceph.conf` and `ceph.client.admin.keyring` files from ceph cluster node to
 cat /etc/ceph/ceph.conf
 ```
 
+Get base64 value from keyring file:
 ```bash
-sudo cat /etc/ceph/ceph.client.admin.keyring
+sudo cat /etc/ceph/ceph.client.admin.keyring | base64 -w 0; echo
 ```
+
+---
 
 ```bash
 sudo vim /etc/ceph/ceph.conf
-sudo vim /etc/ceph/ceph.client.admin.keyring
+```
+
+```bash
+echo "xxxx" | base64 -d > /etc/ceph/ceph.client.admin.keyring
 ```
 
 All the files should be owned by root:
