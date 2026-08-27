@@ -32,6 +32,7 @@ sudo vim /etc/ceph/ceph.conf
 ```bash
 echo "xxxx" | base64 -d > /etc/ceph/ceph.client.admin.keyring
 ```
+> become root `sudo -i`
 
 All the files should be owned by root:
 ```bash
