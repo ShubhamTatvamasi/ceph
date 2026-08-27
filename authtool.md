@@ -1,5 +1,15 @@
 # authtool
 
+
+Verify key:
+```bash
+ceph-authtool \
+  /etc/ceph/ceph.client.admin.keyring \
+  --list
+```
+
+---
+
 Generate new key:
 ```bash
 ceph-authtool \
@@ -14,3 +24,7 @@ ceph-authtool \
   /tmp/ceph.client.test.keyring \
   --list
 ```
+
+
+
+
