@@ -22,7 +22,7 @@ ceph osd erasure-code-profile get erasure-k4-m2
 
 ---
 
-Create a new profile:
+Create a new profile for 3 hosts:
 ```bash
 ceph osd erasure-code-profile set erasure-k2-m1 k=2 m=1
 ```
