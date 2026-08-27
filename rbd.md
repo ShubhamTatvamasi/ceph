@@ -26,8 +26,19 @@ rbd info rbd_pool/db_disk
 
 ### Attach the disk to a VM
 
-
-```
+Map disk to device:
+```bash
 rbd map rbd_pool/db_disk
 ```
 
+Verify:
+```bash
+ls /dev/rbd0
+```
+
+---
+
+Remove extra map:
+```bash
+rbd unmap /dev/rbd1
+```
