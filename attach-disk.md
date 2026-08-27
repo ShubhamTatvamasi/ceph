@@ -22,3 +22,8 @@ cat /etc/ceph/ceph.conf
 sudo cat /etc/ceph/ceph.client.admin.keyring
 ```
 
+```bash
+sudo vim /etc/ceph/ceph.conf
+sudo vim /etc/ceph/ceph.client.admin.keyring
+```
+
