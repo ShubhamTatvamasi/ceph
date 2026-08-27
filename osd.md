@@ -34,17 +34,6 @@ ceph osd in 3
 
 ---
 
-Remove device class:
-```
-ceph osd crush rm-device-class osd.0
-```
-
-Set device class:
-```
-ceph osd crush set-device-class nvme osd.0
-```
-
----
 
 List all pools:
 ```bash
@@ -54,11 +43,6 @@ ceph osd pool ls
 Create a new pool
 ```bash
 ceph osd pool create rdb_pool
-```
-
-list all crush rules:
-```bash
-ceph osd crush rule ls
 ```
 
 delete the pool:
