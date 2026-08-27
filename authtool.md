@@ -11,6 +11,6 @@ ceph-authtool \
 Verify key:
 ```bash
 ceph-authtool \
-  /etc/ceph/ceph.client.admin.keyring \
+  /tmp/ceph.client.test.keyring \
   --list
 ```
