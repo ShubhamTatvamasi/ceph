@@ -35,6 +35,8 @@ Update the public key from node1 to to node2 and node3:
 vim /root/.ssh/authorized_keys
 ```
 
+---
+
 check private key
 ```bash
 ceph config-key get mgr/cephadm/ssh_identity_key
