@@ -8,3 +8,9 @@ ceph-authtool \
   -n client.test
 ```
 
+Verify key:
+```bash
+ceph-authtool \
+  /etc/ceph/ceph.client.admin.keyring \
+  --list
+```
