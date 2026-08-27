@@ -16,3 +16,8 @@ List rbd images:
 ```bash
 rbd ls rbd_pool
 ```
+
+Check the disk details:
+```bash
+rbd info rbd_pool/db_disk
+```
