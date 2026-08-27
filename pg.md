@@ -10,3 +10,7 @@ Dump all PG details
 ceph pg dump
 ```
 
+Get the details of a pg:
+```bash
+ceph pg 1.0 query
+```
