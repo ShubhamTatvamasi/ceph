@@ -2,7 +2,7 @@
 
 Edit ceph sudoers file:
 ```bash
-sudo visudo -f /etc/sudoers.d/ceph-smartctl
+sudo EDITOR=vim visudo -f /etc/sudoers.d/ceph-smartctl
 ```
 
 Update this value:
