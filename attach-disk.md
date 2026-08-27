@@ -23,6 +23,11 @@ Get base64 value from keyring file:
 sudo cat /etc/ceph/ceph.client.admin.keyring | base64 -w 0; echo
 ```
 
+Copy file from one server to another:
+```bash
+scp /etc/ceph/ceph.client.admin.keyring ansible@ceph-storage-test:~
+```
+
 ---
 
 ```bash
