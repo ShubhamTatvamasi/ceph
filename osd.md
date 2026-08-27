@@ -56,6 +56,11 @@ Create a new pool
 ceph osd pool create rdb_pool
 ```
 
+list all crush rules:
+```bash
+ceph osd crush rule ls
+```
+
 delete the pool:
 ```bash
 ceph osd pool rm rdb_pool
