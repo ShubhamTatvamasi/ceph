@@ -15,6 +15,11 @@ Create a new pool
 ceph osd pool create rdb_pool
 ```
 
+Change replica to 4:
+```bash
+ceph osd pool set rdb_pool size 4
+```
+
 Enable pool deletion:
 ```bash
 ceph config set mon mon_allow_pool_delete true
