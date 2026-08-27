@@ -21,3 +21,13 @@ Check the disk details:
 ```bash
 rbd info rbd_pool/db_disk
 ```
+
+---
+
+### Attach the disk to a VM
+
+
+```
+rbd map rbd_pool/db_disk
+```
+
