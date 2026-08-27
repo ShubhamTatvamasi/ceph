@@ -1,10 +1,13 @@
 # pool
 
-
-
 List all pools:
 ```bash
 ceph osd pool ls
+```
+
+List all pools with details:
+```bash
+ceph osd pool ls detail
 ```
 
 Create a new pool
