@@ -1,6 +1,6 @@
  # Attach Disk
 
-Install dependencies:
+Install ceph:
 ```bash
 sudo apt install -y ceph
 ```
