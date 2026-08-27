@@ -37,9 +37,15 @@ ls /dev/rbd0
 ```
 
 Create the filesystem:
-```
+```bash
 mkfs.xfs /dev/rbd0
 ```
+
+Create a folder for mount point:
+```bash
+mkdir /mnt/db_data
+```
+
 
 ---
 
