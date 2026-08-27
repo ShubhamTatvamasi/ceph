@@ -5,3 +5,8 @@ Check cluster status:
 ceph status
 ```
 
+Check ceph health status:
+```bash
+ceph health detail
+```
+
