@@ -7,6 +7,11 @@ list all crush rules:
 ceph osd crush rule ls
 ```
 
+Give the rule details:
+```bash
+ceph osd crush rule dump
+```
+
 ---
 
 
