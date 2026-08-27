@@ -19,3 +19,10 @@ Verify keys:
 ```bash
 ceph mon dump | grep auth_.*cipher
 ```
+
+---
+
+Rotate key with legacy `aes` algo:
+```bash
+ceph auth rotate client.admin
+```
