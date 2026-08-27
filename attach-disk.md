@@ -2,7 +2,7 @@
 
 Install dependencies:
 ```bash
-sudo apt install -y ceph ceph-common
+sudo apt install -y ceph
 ```
 
 Check if ceph has been installed:
