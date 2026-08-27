@@ -1,4 +1,4 @@
-# Ceph CLI
+# Ceph Health
 
 Check cluster status:
 ```bash
