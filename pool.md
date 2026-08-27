@@ -20,6 +20,11 @@ Change replica to 4:
 ceph osd pool set rbd_pool size 4
 ```
 
+rename the pool:
+```bash
+ceph osd pool rename rbd rbd_pool
+```
+
 Enable pool deletion:
 ```bash
 ceph config set mon mon_allow_pool_delete true
