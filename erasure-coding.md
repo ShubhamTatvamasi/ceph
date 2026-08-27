@@ -10,3 +10,13 @@ Get the profile details:
 ceph osd erasure-code-profile get default
 ```
 
+Create a new profile:
+```bash
+ceph osd erasure-code-profile set erasure-k4-m2 k=4 m=2
+```
+
+Check the details of erasure-k4-m2 profile:
+```bash
+ceph osd erasure-code-profile get erasure-k4-m2
+```
+
