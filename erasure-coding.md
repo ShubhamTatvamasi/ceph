@@ -1,4 +1,4 @@
-# erasure-code
+# erasure coding
 
 List erasure coding profiles:
 ```bash
