@@ -9,3 +9,8 @@ Enable legacy `aes` key:
 ```bash
 ceph mon set auth_allowed_ciphers aes,aes256k
 ```
+
+Verify keys:
+```bash
+ceph mon dump | grep auth_.*cipher
+```
