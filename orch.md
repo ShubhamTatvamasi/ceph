@@ -15,7 +15,7 @@ Add more nodes to the cluster:
 ceph orch host add ceph-node2 --labels _admin
 ceph orch host add ceph-node3 --labels _admin
 ```
-> make sure we have 167 user and group before this
+> make sure we have 167 user and group before this on all nodes
 
 Check app the node services:
 ```bash
