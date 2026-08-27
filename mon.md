@@ -26,3 +26,23 @@ Rotate key with legacy `aes` algo:
 ```bash
 ceph auth rotate client.admin
 ```
+
+Update the key:
+```
+cat << EOF > /etc/ceph/ceph.keyring
+[client.admin]
+  key = AQASPpBq3+jTGRAA4W0yZCi7WEMC7KqG2j9JXQ==
+  caps mds = "allow *"
+  caps mgr = "allow *"
+  caps mon = "allow *"
+  caps osd = "allow *"
+EOF
+```
+
+Verify new key:
+```bash
+ceph auth get client.admin
+```
+
+
+
