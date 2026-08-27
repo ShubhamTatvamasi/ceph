@@ -27,3 +27,8 @@ sudo vim /etc/ceph/ceph.conf
 sudo vim /etc/ceph/ceph.client.admin.keyring
 ```
 
+All the files should be owned by root:
+```bash
+sudo chown root:root /etc/ceph/*
+```
+
