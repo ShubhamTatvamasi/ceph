@@ -12,6 +12,7 @@ ceph --version
 
 ---
 
+Copy `ceph.conf` and `ceph.client.admin.keyring` files from ceph cluster node to VM at same location
 
 ```bash
 cat /etc/ceph/ceph.conf
