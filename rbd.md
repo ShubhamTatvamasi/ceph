@@ -46,6 +46,15 @@ Create a folder for mount point:
 mkdir /mnt/db_data
 ```
 
+Mount the disk to the path:
+```bash
+mount /dev/rbd0 /mnt/db_data
+```
+
+Check the disk:
+```bash
+df -h
+```
 
 ---
 
