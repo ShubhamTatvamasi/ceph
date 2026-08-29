@@ -22,10 +22,19 @@ Check app the node services:
 ceph orch ps
 ```
 
-Place both mon and mgr services on all 3 nodes:
+Place `mon` services on all 3 nodes:
 ```bash
 ceph orch apply mon --placement="ceph-node1,ceph-node2,ceph-node3"
+```
+
+Place `mgr` services on all 3 nodes:
+```bash
 ceph orch apply mgr --placement="ceph-node1,ceph-node2,ceph-node3"
+```
+
+Place `myfs` services on all 3 nodes:
+```bash
+ceph orch apply myfs --placement="ceph-node1,ceph-node2,ceph-node3"
 ```
 
 ---
