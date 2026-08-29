@@ -1,6 +1,6 @@
 # fs
 
-Setup `cephfs.myfs.data` and `cephfs.myfs.meta` pools:
+Create `cephfs.myfs.meta` and `cephfs.myfs.data` pools:
 ```bash
 ceph fs volume create myfs
 ```
