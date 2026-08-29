@@ -15,12 +15,12 @@ ceph osd crush rule dump
 ---
 
 
-Remove device class:
+Remove the device class from OSD:
 ```
 ceph osd crush rm-device-class osd.0
 ```
 
-Set device class:
+Set `nvme` device class to an OSD:
 ```
 ceph osd crush set-device-class nvme osd.0
 ```
