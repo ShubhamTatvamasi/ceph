@@ -1,10 +1,5 @@
 # orch
 
-Get inside the cephadm shell container
-```bash
-cephadm shell
-```
-
 list all hosts:
 ```bash
 ceph orch host ls
