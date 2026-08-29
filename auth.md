@@ -12,7 +12,14 @@ ceph auth get-or-create client.pve \
   osd 'allow *'
 ```
 
+Get the key details:
+```bash
+ceph auth get client.pve
+``
+
 Delete the user:
 ```bash
 ceph auth del client.pve
 ```
+
+
