@@ -7,5 +7,5 @@ ceph fs volume create myfs
 
 List pools:
 ```bash
-ceph osd pool ls
+ceph osd lspools
 ```
