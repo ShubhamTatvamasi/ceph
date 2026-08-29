@@ -36,7 +36,7 @@ ceph orch apply mgr \
   --placement="ceph-node1,ceph-node2,ceph-node3"
 ```
 
-Place `mds` services on all 3 nodes:
+Place `mds` services as `myfs` on all 3 nodes:
 ```bash
 ceph orch apply mds myfs \
   --placement="ceph-node1,ceph-node2,ceph-node3"
