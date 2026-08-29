@@ -25,6 +25,8 @@ rename the pool:
 ceph osd pool rename rbd rbd_pool
 ```
 
+---
+
 Enable pool deletion:
 ```bash
 ceph config set mon mon_allow_pool_delete true
