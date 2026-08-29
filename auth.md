@@ -15,7 +15,7 @@ ceph auth get-or-create client.pve \
 Get the key details:
 ```bash
 ceph auth get client.pve
-``
+```
 
 Delete the user:
 ```bash
