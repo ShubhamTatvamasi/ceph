@@ -11,20 +11,23 @@ sudo cephadm shell
 
 ---
 
+Install cephadm:
 ```bash
 sudo apt install -y cephadm python3-ceph-common
 ```
+
+Add user to the docker group
+```bash
+sudo usermod -aG docker $USER
+```
+
+---
 
 manual
 ```
 CEPH_RELEASE=20.2.4
 curl --silent --remote-name --location \
   https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
-```
-
-Add user to the docker group
-```bash
-sudo usermod -aG docker $USER
 ```
 
 ---
