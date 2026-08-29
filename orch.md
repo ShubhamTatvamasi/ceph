@@ -5,6 +5,11 @@ list all hosts:
 ceph orch host ls
 ```
 
+list all the services running:
+```bash
+ceph orch ls
+```
+
 Add more nodes to the cluster:
 ```bash
 ceph orch host add ceph-node2 --labels _admin
