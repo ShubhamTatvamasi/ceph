@@ -14,3 +14,8 @@ Check status, we will be having more `pgs`:
 ```bash
 ceph -s
 ```
+
+Check status for filesystem:
+```bash
+ceph fs status
+```
