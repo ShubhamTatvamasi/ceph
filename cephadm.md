@@ -44,6 +44,7 @@ sudo cephadm add-repo --release tentacle
 
 ---
 
+Check `cephadm` installed version:
 ```
 dpkg-query -W cephadm
 ```
