@@ -1,7 +1,7 @@
 # Proxmox
 
 
-DataCenter -> Storage -> Add (RDB)
+DataCenter -> Storage -> Add (RBD)
 
 ❌ Use Proxmox VE managed hyper-converged ceph pool
 
