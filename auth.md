@@ -24,3 +24,15 @@ ceph auth del client.pve
 ```
 
 
+---
+
+Create a new Admin key with legacy `aes` key type:
+```bash
+ceph auth get-or-create client.admin2 \
+  mds 'allow *' \
+  mgr 'allow *' \
+  mon 'allow *' \
+  osd 'allow *' \
+  --key_type aes
+```
+
