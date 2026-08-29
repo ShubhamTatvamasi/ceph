@@ -4,6 +4,13 @@ https://docs.ceph.com/en/latest/releases/#active-releases \
 https://download.ceph.com
 
 
+Access the ceph shell:
+```bash
+sudo cephadm shell
+```
+
+---
+
 ```bash
 sudo apt install -y cephadm python3-ceph-common
 ```
@@ -37,11 +44,5 @@ dpkg-query -W cephadm
 ```
 
 
----
-
-Access the ceph shell:
-```bash
-sudo cephadm shell
-```
 
 
