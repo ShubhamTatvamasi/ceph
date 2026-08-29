@@ -15,6 +15,11 @@ Get the details of a pg:
 ceph pg 1.0 query
 ```
 
+Check the total number of placement groups we have for `rbd_pool` pool:
+```bash
+ceph osd pool get rbd_pool pg_num
+```
+
 List by pool:
 ```bash
 ceph pg ls-by-pool rbd_pool
