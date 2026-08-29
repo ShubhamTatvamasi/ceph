@@ -5,12 +5,12 @@ Check the key algo:
 ceph mon dump | grep -E 'auth_allowed_ciphers|auth_preferred_cipher'
 ```
 
-Enable legacy `aes` key:
+Allow both `aes` and `aes256k` keys:
 ```bash
 ceph mon set auth_allowed_ciphers aes,aes256k
 ```
 
-Enable legacy `aes` key:
+Set preferred key as `aes`:
 ```bash
 ceph mon set auth_preferred_cipher aes
 ```
