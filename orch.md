@@ -22,6 +22,8 @@ Check app the node services:
 ceph orch ps
 ```
 
+---
+
 Place `mon` services on all 3 nodes:
 ```bash
 ceph orch apply mon --placement="ceph-node1,ceph-node2,ceph-node3"
