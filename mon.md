@@ -10,7 +10,7 @@ Allow both `aes` and `aes256k` keys:
 ceph mon set auth_allowed_ciphers aes,aes256k
 ```
 
-Set preferred key as `aes`:
+Set preferred key as `aes` if you want to use legacy key by default:
 ```bash
 ceph mon set auth_preferred_cipher aes
 ```
