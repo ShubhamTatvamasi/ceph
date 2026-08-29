@@ -26,17 +26,20 @@ ceph orch ps
 
 Place `mon` services on all 3 nodes:
 ```bash
-ceph orch apply mon --placement="ceph-node1,ceph-node2,ceph-node3"
+ceph orch apply mon \
+  --placement="ceph-node1,ceph-node2,ceph-node3"
 ```
 
 Place `mgr` services on all 3 nodes:
 ```bash
-ceph orch apply mgr --placement="ceph-node1,ceph-node2,ceph-node3"
+ceph orch apply mgr \
+  --placement="ceph-node1,ceph-node2,ceph-node3"
 ```
 
 Place `mds` services on all 3 nodes:
 ```bash
-ceph orch apply mds myfs --placement="ceph-node1,ceph-node2,ceph-node3"
+ceph orch apply mds myfs \
+  --placement="ceph-node1,ceph-node2,ceph-node3"
 ```
 
 ---
