@@ -13,7 +13,7 @@ Monitor(s) | 10.10.153.255 10.10.204.94 10.10.169.182
 User name | pve
 Nodes | All
 Enable | ✅️
-Content | Disk Image
+Content | Disk Image, Container
 KRDB | ✅️
 
 Keyring:
