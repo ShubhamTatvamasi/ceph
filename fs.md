@@ -9,3 +9,8 @@ List pools:
 ```bash
 ceph osd lspools
 ```
+
+Check status, we will be having more `pgs`:
+```bash
+ceph -s
+```
