@@ -21,3 +21,11 @@ chmod 600 /etc/passwd-s3fs
 ```
 mkdir /mnt/s3-bucket
 ```
+
+Mount s3 bucket to file system:
+```bash
+s3fs my-first-bucket /mnt/s3-bucket \
+  -o passwd_file=/etc/passwd-s3fs \
+  -o url=http://10.10.153.255 \
+  -o use_path_request_style
+```
