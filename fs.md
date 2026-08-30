@@ -60,7 +60,7 @@ vim /etc/fstab
 
 ```
 10.10.153.255,10.10.204.94,10.10.169.182:/ /mnt/shared_data ceph
-name=fsuser,secretfile=/etc/ceph/fsuser.secret,netdev 0 0
+name=fsuser,secretfile=/etc/ceph/fsuser.secret,_netdev 0 0
 ```
 
 
