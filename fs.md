@@ -19,3 +19,11 @@ Check status for filesystem:
 ```bash
 ceph fs status
 ```
+
+---
+
+Create `client.fsuser`:
+```bash
+ceph fs authorise myfs client.fsuser / rw
+```
+
