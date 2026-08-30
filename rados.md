@@ -19,3 +19,8 @@ Recover file:
 ```bash
 rados get my_raw_object recovered_file.txt -p rbd_pool
 ```
+
+Verify file:
+```bash
+cat recovered_file.txt
+```
