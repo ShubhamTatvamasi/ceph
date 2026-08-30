@@ -17,3 +17,9 @@ Get user details:
 ```bash
 radosgw-admin user info --uid=s3user
 ```
+
+Delete user:
+```bash
+radosgw-admin user rm --uid=s3user
+```
+
