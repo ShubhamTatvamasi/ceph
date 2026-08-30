@@ -42,10 +42,13 @@ chmod 600 /etc/ceph/ceph.client.fsuser.keyring
 mkdir -p /mnt/shared_data
 ```
 
-
+Mount the file system:
 ```bash
 mount -t ceph 10.10.153.255,10.10.204.94,10.10.169.182:/ /mnt/shared_data -o name=fsuser
 ```
 
-
+Check the mounted path:
+```bash
+df -h
+```
 
