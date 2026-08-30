@@ -33,3 +33,8 @@ Update file on node:
 ```bash
 vim /etc/ceph/ceph.client.fsuser.keyring
 ```
+
+```
+chmod 600 /etc/ceph/ceph.client.fsuser.keyring
+```
+
