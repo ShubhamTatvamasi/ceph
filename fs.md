@@ -24,6 +24,6 @@ ceph fs status
 
 Create `client.fsuser`:
 ```bash
-ceph fs authorise myfs client.fsuser / rw
+ceph fs authorize myfs client.fsuser / rw
 ```
 
