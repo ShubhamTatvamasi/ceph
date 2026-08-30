@@ -27,3 +27,9 @@ Create `client.fsuser`:
 ceph fs authorize myfs client.fsuser / rw
 ```
 
+---
+
+Update file on node:
+```bash
+vim /etc/ceph/ceph.client.fsuser.keyring
+```
