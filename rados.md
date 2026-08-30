@@ -9,3 +9,8 @@ Upload file as raw object:
 ```bash
 rados put my_raw_object find_me.txt -p rbd_pool
 ```
+
+List all object in rbd_pool:
+```bash
+rados ls -p rbd_pool
+```
