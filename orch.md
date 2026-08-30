@@ -42,6 +42,12 @@ ceph orch apply mds myfs \
   --placement="ceph-node1,ceph-node2,ceph-node3"
 ```
 
+Place `rgw` services as `myrgw` on all 3 nodes:
+```bash
+ceph orch apply rgw myrgw \
+  --placement="ceph-node1,ceph-node2,ceph-node3"
+```
+
 ---
 
 List all OSD drives:
