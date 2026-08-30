@@ -5,12 +5,17 @@ Install `s3fs` package:
 sudo apt install -y s3fs
 ```
 
+Become root:
 ```bash
-sudo echo "HWQAPPQPAYFXSY601HMB:U9M7zcw7DeMN4NYR5FdXN4RgE4KkRce0mUJ0fL6W" > /etc/passwd-s3fs
+sudo -i
+```
+
+```bash
+echo "HWQAPPQPAYFXSY601HMB:U9M7zcw7DeMN4NYR5FdXN4RgE4KkRce0mUJ0fL6W" > /etc/passwd-s3fs
 ```
 
 ```
-sudo chmod 600 /etc/passwd-s3fs
+chmod 600 /etc/passwd-s3fs
 ```
 
 ```
