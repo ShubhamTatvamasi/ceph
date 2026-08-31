@@ -24,3 +24,14 @@ Get the details of how much memory is allowed to use:
 ```bash
 ceph config get mgr mgr/cephadm/autotune_memory_target_ratio
 ```
+
+check default:
+```bash
+ceph config set mgr mgr/cephadm/autotune_memory_target_ratio 0.8
+```
+
+reset:
+```bash
+ceph config rm mgr mgr/cephadm/autotune_memory_target_ratio
+```
+
