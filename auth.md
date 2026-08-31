@@ -55,7 +55,7 @@ cat /root/ceph.client.backup.keyring
 ```
 
 ```bash
-ceph auth caps client.backup mon 'allow r' osd 'allow rw pool=rbd_pool'
+ceph auth caps client.backup mon 'allow r' osd 'allow rw pool=rbd_pool, allow rw pool=archive_pool'
 ```
 
 ```bash
