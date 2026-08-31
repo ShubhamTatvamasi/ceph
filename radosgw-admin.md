@@ -78,4 +78,16 @@ aws s3api put-bucket-policy \
   --endpoint-url http://127.0.0.1:80
 ```
 
+```bash
+radosgw-admin quota set \
+  --uid=s3user \
+  --quota-scope=user \
+  --max
+````
+
+```bash
+radosgw-admin quota enable \
+  --uid=s3user \
+  --quota-scope=user
+```
 
