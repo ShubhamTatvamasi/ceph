@@ -49,3 +49,8 @@ Remove node from cluster:
 ceph orch host rm ceph-node3 --offline --force
 ```
 
+Check nodes:
+```bash
+ceph orch host ls
+```
+
