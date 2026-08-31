@@ -3,8 +3,8 @@
 
 Create ceph user and group on all nodes:
 ```bash
-groupadd -g 167 ceph
-useradd -r \
+sudo groupadd -g 167 ceph
+sudo useradd -r \
   -u 167 \
   -g 167 \
   -d /var/lib/ceph \
