@@ -7,7 +7,7 @@ rados bench -p rbd_pool 10 write --no-cleanup
 
 Cleanup RADOS benchmark data:
 ```bash
-run rados bench -p rbd_pool 10 cleanup
+rados -p rbd_pool cleanup
 ```
 
 Create a 10 GB RBD image:
