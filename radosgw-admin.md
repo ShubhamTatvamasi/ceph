@@ -27,13 +27,6 @@ radosgw-admin user rm --uid=s3user
 
 ### Ceph S3 RGW Commands
 
-```bash
-radosgw-admin user list
-````
-
-```bash
-radosgw-admin user info --uid=s3user
-```
 
 ```bash
 radosgw-admin user suspend --uid=s3user
