@@ -14,3 +14,9 @@ Check if upgrade details:
 ```bash
 ceph orch upgrade check --image quay.io/ceph/ceph:v21.1.0
 ```
+
+Start the upgrade:
+```bash
+ceph orch upgrade start --image quay.io/ceph/ceph:v21.1.0
+```
+
