@@ -72,8 +72,11 @@ ceph orch device zap ceph-node2 /dev/sdb --force
 ---
 
 Remove the OSD disk from cluster:
-```
+```bash
 ceph orch osd rm 7
 ```
 
-
+Check status of disk:
+```bash
+ceph orch osd rm status
+```
