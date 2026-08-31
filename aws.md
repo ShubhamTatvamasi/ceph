@@ -30,4 +30,12 @@ endpoint_url = http://10.10.153.255
 EOF
 ```
 
+Setup config with haproxy
+```
+cat << EOF > ~/.aws/config
+[default]
+region = us-east-1
+endpoint_url = http://127.0.0.1
+EOF
+```
 
