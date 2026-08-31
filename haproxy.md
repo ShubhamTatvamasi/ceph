@@ -15,6 +15,7 @@ Setup new config file:
 sudo vim /etc/haproxy/haproxy.cfg
 ```
 
+Setup `haproxy` config for s3:
 ```
 global
     log 127.0.0.1:514 local2
@@ -65,3 +66,15 @@ backend ceph_rgw
     server rgw2 10.10.204.94:80 check inter 3s fall 3 rise 2
     server rgw3 10.10.169.182:80 check inter 3s fall 3 rise 2
 ```
+
+Restart `haproxy`:
+```bash
+sudo systemctl restart haproxy
+```
+
+Check status:
+```bash
+sudo systemctl status haproxy
+```
+
+
