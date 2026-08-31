@@ -69,3 +69,11 @@ Format the disk if it's not available:
 ceph orch device zap ceph-node2 /dev/sdb --force
 ```
 
+---
+
+Remove the OSD disk from cluster:
+```
+ceph orch osd rm 7
+```
+
+
