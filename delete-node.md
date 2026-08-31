@@ -19,6 +19,13 @@ ceph orch osd rm 5
 ceph orch osd rm 8
 ```
 
+Prune disks:
+```bash
+ceph osd purge 1 --yes-i-really-mean-it
+ceph osd purge 5 --yes-i-really-mean-it
+ceph osd purge 8 --yes-i-really-mean-it
+```
+
 Check OSD drain status:
 ```bash
 ceph orch osd rm status
