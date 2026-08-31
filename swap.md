@@ -12,7 +12,7 @@ sysctl -w vm.swappiness=1
 
 Create the Ceph tuning configuration
 ``` bash
-nano /etc/sysctl.d/99-ceph-tuning.conf
+vim /etc/sysctl.d/99-ceph-tuning.conf
 ```
 
 Add:
