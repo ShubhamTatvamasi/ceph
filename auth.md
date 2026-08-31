@@ -41,6 +41,7 @@ ceph auth get-or-create client.admin2 \
 
 ### Ceph Backup Client
 
+All standard users must start with `client`:
 ```bash
 ceph auth get-or-create client.backup mon 'allow r' osd 'allow rw pool=rbd_pool'
 ````
