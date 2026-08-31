@@ -60,7 +60,10 @@ Add all OSD to the cluster:
 ceph orch apply osd --all-available-devices
 ```
 
-
+Add only a single disk:
+```bash
+ceph orch daemon add osd ceph-node3:/dev/sdd
+```
 ---
 
 
