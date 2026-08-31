@@ -44,6 +44,10 @@ radosgw-admin user enable --uid=s3user
 radosgw-admin bucket list
 ```
 
+---
+
+### Policy 
+
 ```bash
 cd /root
 ```
@@ -55,7 +59,7 @@ vim policy.json
 policy.json
 ```json
 {
-  "Version": "2026-6-30",
+  "Version": "2012-10-17",
   "Statement": [
     {
       "Effect": "Allow",
