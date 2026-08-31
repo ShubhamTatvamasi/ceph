@@ -9,3 +9,8 @@ Set the memory target:
 ```
 ceph config set osd osd_memory_target 8G
 ```
+
+Remove custom value of the memory target:
+```
+ceph config rm osd osd_memory_target
+```
