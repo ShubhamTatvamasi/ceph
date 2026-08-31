@@ -82,7 +82,7 @@ aws s3api put-bucket-policy \
 radosgw-admin quota set \
   --uid=s3user \
   --quota-scope=user \
-  --max
+  --max-size 50G
 ````
 
 ```bash
