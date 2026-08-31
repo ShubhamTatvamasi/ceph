@@ -20,3 +20,7 @@ Start the upgrade:
 ceph orch upgrade start --image quay.io/ceph/ceph:v21.1.0
 ```
 
+Check upgrade status:
+```bash
+ceph orch upgrade status
+```
