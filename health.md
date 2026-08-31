@@ -10,3 +10,12 @@ Check ceph health status:
 ceph health detail
 ```
 
+Mute OSD down alert:
+```bash
+ceph health mute OSD_DOWN 1h
+```
+
+Unmute OSD down alert:
+```
+ceph health unmute OSD_DOWN
+```
