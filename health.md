@@ -19,3 +19,13 @@ Unmute OSD down alert:
 ```
 ceph health unmute OSD_DOWN
 ```
+
+
+---
+
+Mute AES Key warning:
+```bash
+ceph health mute AUTH_INSECURE_CLIENT_KEY_TYPE
+ceph health mute AUTH_INSECURE_KEYS_ALLOWED
+ceph health mute AUTH_INSECURE_KEYS_CREATABLE
+```
