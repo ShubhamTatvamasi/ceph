@@ -43,3 +43,9 @@ Drain host:
 ```bash
 ceph orch host drain ceph-node3 --force
 ```
+
+Remove node from cluster:
+```bash
+ceph orch host rm ceph-node3 --offline --force
+```
+
