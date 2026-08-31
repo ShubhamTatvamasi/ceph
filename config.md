@@ -1,6 +1,6 @@
 # config
 
-Get the Memory target:
+Get the memory target:
 ```
 ceph config get osd osd_memory_target
 ```
