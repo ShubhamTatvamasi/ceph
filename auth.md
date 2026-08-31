@@ -36,3 +36,33 @@ ceph auth get-or-create client.admin2 \
   --key_type aes
 ```
 
+---
+
+
+### Ceph Backup Client
+
+```bash
+ceph auth get-or-create client.backup mon 'allow r' osd 'allow rw pool=rbd_pool'
+````
+
+```bash
+ceph auth get client.backup > /root/ceph.client.backup.keyring
+```
+
+```bash
+cat /root/ceph.client.backup.keyring
+```
+
+```bash
+ceph auth caps client.backup mon 'allow r' osd 'allow rw pool=rbd_pool'
+```
+
+```bash
+ceph auth rm client.backup
+```
+
+```bash
+ceph auth get client.backup
+```
+
+
