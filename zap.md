@@ -2,5 +2,5 @@
 
 Format the disk:
 ```bash
-ceph orch device zap ceph-node3 /dev/sdd
+ceph orch device zap ceph-node3 /dev/sdd --force
 ```
