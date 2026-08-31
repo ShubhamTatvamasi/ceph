@@ -41,10 +41,6 @@ radosgw-admin user enable --uid=s3user
 ```
 
 ```bash
-nano policy.json
-```
-
-```bash
 radosgw-admin bucket list
 ```
 
@@ -53,7 +49,7 @@ cd /root
 ```
 
 ```bash
-vi policy.json
+vim policy.json
 ```
 
 policy.json
