@@ -29,3 +29,8 @@ Watch upgrade:
 ```bash
 watch -n 10 ceph orch upgrade status
 ```
+
+Resume upgrade:
+```bash
+ceph orch upgrade resume
+```
