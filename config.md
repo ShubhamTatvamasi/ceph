@@ -14,3 +14,8 @@ Remove custom value of the memory target:
 ```
 ceph config rm osd osd_memory_target
 ```
+
+Get the memory target autotune is enabled or not:
+```bash
+ceph config get osd osd_memory_target_autotune
+```
