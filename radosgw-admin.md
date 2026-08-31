@@ -65,7 +65,7 @@ policy.json
       "Effect": "Allow",
       "Principal": "*",
       "Action": ["s3:GetObject"],
-      "Resource": ["arn:aws:s3:::company-documents/*"]
+      "Resource": ["arn:aws:s3:::my-first-bucket/*"]
     }
   ]
 }
