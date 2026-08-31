@@ -71,3 +71,11 @@ policy.json
 }
 ```
 
+```bash
+aws s3api put-bucket-policy \
+    --bucket my-first-bucket \
+    --policy file:///policy.json \
+    --endpoint-url http://127.0.0.1:80
+```
+
+
