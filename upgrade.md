@@ -24,3 +24,8 @@ Check upgrade status:
 ```bash
 ceph orch upgrade status
 ```
+
+Watch upgrade:
+```bash
+watch -n 10 ceph orch upgrade status
+```
