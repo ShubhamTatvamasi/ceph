@@ -1,4 +1,4 @@
-# radosgw
+# radosgw-admin
 
 
 List all users:
