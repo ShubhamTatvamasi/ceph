@@ -93,3 +93,10 @@ Check status of disk:
 ```bash
 ceph orch osd rm status
 ```
+
+Remove OSD from specific node:
+```bash
+ceph orch osd rm 1
+ceph orch osd rm 5
+ceph orch osd rm 8
+```
