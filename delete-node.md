@@ -5,6 +5,13 @@ Check services of a specific node:
 ceph orch ps --hostname ceph-node3
 ```
 
+Format disks:
+```bash
+ceph orch device zap ceph-node3 /dev/sdb --force
+ceph orch device zap ceph-node3 /dev/sdc --force
+ceph orch device zap ceph-node3 /dev/sdd --force
+```
+
 Remove OSD from specific node:
 ```bash
 ceph orch osd rm 1
