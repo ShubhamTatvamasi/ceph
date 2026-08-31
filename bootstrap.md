@@ -23,7 +23,7 @@ sudo cephadm bootstrap \
 
 Get public key from node1:
 ```bash
-sudo cephadm shell -- ceph cephadm get-pub-key > ceph.pub
+cephadm shell -- ceph cephadm get-pub-key > ceph.pub
 ```
 
 ```bash
