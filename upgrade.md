@@ -34,3 +34,9 @@ Resume upgrade:
 ```bash
 ceph orch upgrade resume
 ```
+
+Stop the upgrade:
+```bash
+ceph orch upgrade stop
+```
+
