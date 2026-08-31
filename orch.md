@@ -22,6 +22,11 @@ Check app the node services:
 ceph orch ps
 ```
 
+Check services of a specific node:
+```bash
+ceph orch ps --hostname ceph-node3
+```
+
 ---
 
 Place `mon` services on all 3 nodes:
