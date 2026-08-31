@@ -29,3 +29,11 @@ s3fs my-first-bucket /mnt/s3-bucket \
   -o url=http://10.10.153.255 \
   -o use_path_request_style
 ```
+
+Mount s3 bucket to file system with haproxy:
+```bash
+s3fs my-first-bucket /mnt/s3-bucket \
+  -o passwd_file=/etc/passwd-s3fs \
+  -o url=http://10.10.153.255 \
+  -o use_path_request_style
+```
