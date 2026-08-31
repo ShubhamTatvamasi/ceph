@@ -23,7 +23,3 @@ sudo cephadm bootstrap \
   --cluster-network 10.20.0.0/16
 ```
 
-Install Ceph Cluster:
-```bash
-sudo cephadm install
-```
