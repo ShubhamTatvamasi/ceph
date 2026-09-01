@@ -56,9 +56,7 @@ df -h
 
 ---
 
-### Backup
-
-
+Backup disk:
 ```bash
 rbd export rbd_pool/db_disk /tmp/db_disk_backup.img
 ```
