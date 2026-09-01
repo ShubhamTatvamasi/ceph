@@ -13,10 +13,10 @@ ceph crash info <crash_id>
 ```
 
 ```bash
-ceph tell osd.3 config get debug_osd
+ceph tell osd.0 config get debug_osd
 ```
 
 ```bash
-ceph tell osd.5 config set debug_osd 20/20
+ceph tell osd.0 config set debug_osd 20/20
 ```
 
