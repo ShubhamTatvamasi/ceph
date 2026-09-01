@@ -1,7 +1,7 @@
 # log
 
 ```bash
-sudo cephadm logs --name osd.5 -- -f
+sudo cephadm logs --name osd.0 -- -f
 ````
 
 ```bash
