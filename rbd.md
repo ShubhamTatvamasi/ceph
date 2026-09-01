@@ -1,7 +1,5 @@
 # rbd
 
-
-
 Initialize RBD pool:
 ```bash
 rbd pool init rbd_pool
@@ -54,6 +52,15 @@ mount /dev/rbd0 /mnt/db_data
 Check the disk:
 ```bash
 df -h
+```
+
+---
+
+### Backup
+
+
+```bash
+rbd export rbd_pool/db_disk /tmp/db_disk_backup.img
 ```
 
 ---
