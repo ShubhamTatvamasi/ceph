@@ -39,6 +39,8 @@ ceph orch daemon rm mds.myfs.ceph-node3.wcidyo
 ceph orch daemon rm rgw.myrgw.ceph-node3.ectrwd
 ```
 
+---
+
 Drain host:
 ```bash
 ceph orch host drain ceph-node3 --force
